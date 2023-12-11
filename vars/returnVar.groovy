@@ -1,3 +1,6 @@
 def call(String name = 'User') {
-		return ${name}
+		
+		def test = ${name}
+		sh "echo ${test}"
+		return test
 }
