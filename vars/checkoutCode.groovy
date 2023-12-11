@@ -14,11 +14,13 @@
 def call(String repoUrl, String branch) {
   stage('Clone repository') {
    def workingDir = "${env.WORKSPACE}/testgit"
-    dir(${workingDir}) {
-           sh "git clone ${repoUrl}"
-            sh "git checkout ${branch}"
-   sh "echo before return"
-    }
+   sh "echo ${workingDir}"
+//     dir(${workingDir}) {
+//            sh "git clone ${repoUrl}"
+//             sh "git checkout ${branch}"
+//    sh "echo before return"
+//     }
+
 //    sh "git clone ${repoUrl} ${workingDir}"
 //    sh "git checkout ${branch}"
 //    sh "echo before return"
