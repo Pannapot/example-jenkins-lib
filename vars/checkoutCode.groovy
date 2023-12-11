@@ -26,8 +26,9 @@ def call(String repoUrl, String branch) {
 //    sh "git checkout ${branch}"
 //    sh "echo before return"
 //    return workingDir
-  }
-     sh "echo ${workingDir}"
+             sh "echo ${workingDir}"
   return workingDir
+  }
+
 //   return workingDir
 }
